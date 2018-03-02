@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+  <!-- class -->
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add class</Title>
+      <Author>Mouse</Author>
+      <Description>Adds boilerplate code for creating a class</Description>
+      <Shortcut>pclass</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>modifier</ID>
+          <ToolTip>Replace with the access controll type</ToolTip>
+          <Default>public</Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with specified name</ToolTip>
+          <Default>MyClass</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[$modifier$ class $name$
+{
+  $end$
+}
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <!-- enum -->
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add enum</Title>
+      <Author>Mouse</Author>
+      <Description>Adds boilerplate code for creating an enum</Description>
+      <Shortcut>penum</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.ComponentModel.DataAnnotations.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.ComponentModel.DataAnnotations</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>modifier</ID>
+          <ToolTip>Replace with the access controll type</ToolTip>
+          <Default>public</Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with specified name</ToolTip>
+          <Default>MyEnum</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[$modifier$ enum $name$
+{
+  $end$
+}
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <!-- interface -->
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add interface</Title>
+      <Author>Mouse</Author>
+      <Description>Adds boilerplate code for creating an interface</Description>
+      <Shortcut>pinterf</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.ComponentModel.DataAnnotations.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.ComponentModel.DataAnnotations</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>modifier</ID>
+          <ToolTip>Replace with the access controll type</ToolTip>
+          <Default>public</Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with specified name</ToolTip>
+          <Default>MyInterface</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[$modifier$ interface $name$
+{
+  $end$
+}
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
