@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+  <!-- event handler -->
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>event handler</Title>
+      <Shortcut>eh</Shortcut>
+      <Description>Code snippet for an event handler method</Description>
+      <Author>Mouse</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the method</ToolTip>
+          <Default>MyMethod</Default>
+        </Literal>
+        <Literal>
+          <ID>eventArgsType</ID>
+          <ToolTip>Replace with the name of the event argument type</ToolTip>
+          <Default>EventArgs</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private void $name$(object sender, $eventArgsType$ e)
+      {
+          throw new NotImplementedException();$end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <!-- static event handler -->
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>static event handler</Title>
+      <Shortcut>seh</Shortcut>
+      <Description>Code snippet for an event handler static method</Description>
+      <Author>Mouse</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the method</ToolTip>
+          <Default>MyMethod</Default>
+        </Literal>
+        <Literal>
+          <ID>eventArgsType</ID>
+          <ToolTip>Replace with the name of the event argument type</ToolTip>
+          <Default>EventArgs</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private static void $name$(object sender, $eventArgsType$ e)
+      {
+          throw new NotImplementedException();$end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+</CodeSnippets>
