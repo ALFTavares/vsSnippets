@@ -9,7 +9,7 @@
       </SnippetTypes>
       <Title>event handler</Title>
       <Shortcut>eh</Shortcut>
-      <Description>Code snippet for an event handler method</Description>
+      <Description>Code snippet for an event handler</Description>
       <Author>Mouse</Author>
     </Header>
     <Snippet>
@@ -20,21 +20,26 @@
       </Imports>
       <Declarations>
         <Literal>
-          <ID>name</ID>
-          <ToolTip>Replace with the name of the method</ToolTip>
-          <Default>MyMethod</Default>
+          <ID>accessModifier</ID>
+          <ToolTip>Replace with the access modifier</ToolTip>
+          <Default>private</Default>
         </Literal>
         <Literal>
-          <ID>eventArgsType</ID>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the method</ToolTip>
+          <Default>MyEvent</Default>
+        </Literal>
+        <Literal>
+          <ID>eventArgs</ID>
           <ToolTip>Replace with the name of the event argument type</ToolTip>
           <Default>EventArgs</Default>
         </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[private void $name$(object sender, $eventArgsType$ e)
-      {
-          throw new NotImplementedException();$end$
-      }]]>
+        <![CDATA[$accessModifier$ void $name$(object sender, $eventArgs$ e)
+        {
+            throw new NotImplementedException();$end$
+        }]]>
       </Code>
     </Snippet>
   </CodeSnippet>
@@ -47,7 +52,7 @@
       </SnippetTypes>
       <Title>static event handler</Title>
       <Shortcut>seh</Shortcut>
-      <Description>Code snippet for an event handler static method</Description>
+      <Description>Code snippet for a static event handler</Description>
       <Author>Mouse</Author>
     </Header>
     <Snippet>
@@ -58,9 +63,14 @@
       </Imports>
       <Declarations>
         <Literal>
+          <ID>accessModifier</ID>
+          <ToolTip>Replace with the access modifier</ToolTip>
+          <Default>private</Default>
+        </Literal>
+        <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the method</ToolTip>
-          <Default>MyMethod</Default>
+          <Default>MyEvent</Default>
         </Literal>
         <Literal>
           <ID>eventArgsType</ID>
@@ -69,12 +79,11 @@
         </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[private static void $name$(object sender, $eventArgsType$ e)
-      {
-          throw new NotImplementedException();$end$
-      }]]>
+        <![CDATA[$accessModifier$ static void $name$(object sender, $eventArgsType$ e)
+        {
+            throw new NotImplementedException();$end$
+        }]]>
       </Code>
     </Snippet>
   </CodeSnippet>
-
 </CodeSnippets>
